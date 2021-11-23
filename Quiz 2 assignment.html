@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Random questions quiz
+	</title>
+</head>
+<body>
+	<h1>
+		Randomn questions quiz 
+	</h1>
+	<form>
+		<p>
+			1. Given an equation of P = 5 * B - 400 If B = 99, P is (1 mark)
+		</p>
+		
+		<input type ="radio" id="ninetyFive" name="question1">
+		<label for ="ninetyFive" id ="correctAnswerQuestion1"> 95 </label>
+		<br>
+		<input type ="radio" id="96" name="question1">
+		<label for ="96">96</label>
+		<br>
+		<input type ="radio" id="102" name="question1">
+		<label for ="96">102</label>
+		<br>
+		<input type ="radio" id="94" name="question1">
+		<label for ="94">94</label>
+		
+		<p>
+			2. With the same equation as question 1, If B = 102, P is(1 mark)
+		</p>
+		
+		<input type ="text" id="questionTwo" name="question2">
+		<label for="questionTwo" id = "correctAnswerQuestion2"></label>
+		
+		<p>
+			3. With the same equation as question 1, If B = 100, P is(1 mark)
+		</p>
+		
+		<input type ="text" id="questionThree" name="question3">
+		<label for="questionThree" id = "correctAnswerQuestion3"></label>
+		<p>	
+			4. Which function below is used in Python? (4 marks)
+		</p>
+		
+		<input type ="checkbox" id="print" name="print">
+		<label for ="print" class ="correctAnswerQuestion4">print()</label>
+		<br>
+		<input type ="checkbox" id="input" name="input">
+		<label for ="input" class = "correctAnswerQuestion4">input()</label>
+		<br>
+		<input type ="checkbox" id="output" name="output">
+		<label for ="output">output()</label>
+		<br>
+		<input type ="checkbox" id="let" name="let">
+		<label for ="let">let</label>
+		
+		<p>
+			5.Match questions on the left and answers on the right with the same equation in question 1.(4 marks)
+		</p>
+		<table>
+			<tr>
+				<td id ="questionFiveChoiceOne" onclick = "leftRowFunction(1)">a. B = 94, P is </td>
+				<td id ="questionFiveAnswerOne" onclick = "rightRowFunction(1)">90</td>
+				<label for = "questionFiveAnswerOne" class = "correctAnswerQuestion5"></label>
+			</tr>
+			<tr>
+				<td id ="questionFiveChoiceTwo" onclick = "leftRowFunction(2)">b. P = 125, B is</td>
+				<td id ="questionFiveAnswerTwo" onclick = "rightRowFunction(2)">70</td>
+				<label for = "questionFiveAnswerTwo" class = "correctAnswerQuestion5"></label>
+			</tr>
+			<tr>
+				<td id ="questionFiveChoiceThree" onclick = "leftRowFunction(3)">c. B = 110, P is</td>
+				<td id ="questionFiveAnswerThree" onclick = "rightRowFunction(3)">105</td>
+				<label for = "questionFiveAnswerTwo" class = "correctAnswerQuestion5"></label>
+			</tr>
+			<tr>
+				<td id ="questionFiveChoiceFour" onclick = "leftRowFunction(4)">d. P = 50, B is</td>
+				<td id ="questionFiveAnswerFour" onclick = "rightRowFunction(4)">150</td>
+				<label for = "questionFiveAnswerTwo" class = "correctAnswerQuestion5"></label>
+			</tr>
+		</table>
+		
+		<p>
+			6. Order numbers below from greatest to lowest.(4 marks)
+		</p>
+		
+		<p id="questionSixChoiceOne"></p>
+		<label for ="questionSixChoiceOne" id ="questionSixAnswerOne" onClick = "swapFunction(1)">54</label>
+		<label for = "questionSixChoiceOne" class = "correctAnswerQuestion6"></label>
+		<p id="questionSixChoiceTwo"></p>
+		<label for ="questionSixChoiceTwo" id ="questionSixAnswerTwo" onClick = "swapFunction(2)">92</label>		
+		<label for = "questionSixChoiceOne" class = "correctAnswerQuestion6"></label>
+		<p id="questionSixChoiceThree" onClick = "swapFunction()"></p>		
+		<label for ="questionSixChoiceThree" id ="questionSixAnswerThree" onClick = "swapFunction(3)">300</label>
+		<label for = "questionSixChoiceOne" class = "correctAnswerQuestion6"></label>			
+		<p id="questionSixChoiceFour" onClick = "swapFunction()"></p>
+		<label for ="questionSixChoiceFour" id ="questionSixAnswerFour" onClick = "swapFunction(4)">41</label>	
+		<label for = "questionSixChoiceOne" class = "correctAnswerQuestion6"></label>
+		
+		<p></p>
+		
+		<button type ="button" onClick="buttonFunction()">
+			Submit
+		</button>
+	</form>
+	<script src="Script Quiz 2.js"></script>
+</body>
+</html>
